@@ -4,13 +4,42 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Main Page</title>
+	<style>
+		p {
+			background: gray;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		@media (min-width: 1200px) {
+			.lrg {
+				float: left;
+				width: 25%;
+			}
+		}
+		@media (min-width: 900px) and (max-width: 1199px) {
+			.mdm {
+				float: left;
+				width: 50%;
+			}
+		}
+		@media (min-width: 400px) {
+			.sml {
+				background-color: antiquewhite;
+			}
+		}
+	</style>
 </head>
 <body>
-<h1>Hello World!</h1>
-<ul>
-	<li>World 1</li>
-	<li>World 2042</li>
-	<li>World 2077</li>
-</ul>
+<div>
+	<p class="lrg mdm sml">Box1</p>
+	<p class="lrg mdm sml">Box2</p>
+	<p class="lrg mdm sml">Box3</p>
+	<p class="lrg mdm sml">Box4</p>
+	<p class="lrg mdm sml">Box5</p>
+	<p class="lrg mdm sml">Box6</p>
+	<p class="lrg mdm sml">Box7</p>
+	<p class="lrg mdm sml">Box8</p>
+</div>
 </body>
 </html>
